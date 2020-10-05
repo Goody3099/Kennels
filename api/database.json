@@ -6,6 +6,34 @@
             "breed": "Poodle",
             "customerId": 1,
             "locationId": 2
+        },
+        {
+            "id": 2,
+            "name": "Ruby",
+            "breed": "Irish Setter",
+            "customerId": 1,
+            "locationId": 2
+        },
+        {
+            "id": 3,
+            "name": "Buddy",
+            "breed": "Golden Retriever",
+            "customerId": 1,
+            "locationId": 2
+        },
+        {
+            "id": 4,
+            "name": "Bear",
+            "breed": "Mastiff",
+            "customerId": 1,
+            "locationId": 2
+        },
+        {
+            "id": 5,
+            "name": "Emily",
+            "breed": "Tiny White Dogo",
+            "customerId": 1,
+            "locationId": 2
         }
     ],
     "customers": [
@@ -15,7 +43,23 @@
             "address": "7002 Chestnut Ct"
         }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id":1,
+            "name": "Matt",
+            "store": "Murfreesboro"
+        },
+        {
+            "id":2,
+            "name": "Jasmin",
+            "store": "Lavergne"
+        },
+        {
+            "id":3,
+            "name": "Jerry",
+            "store": "Smyrna"
+        }
+    ],
     "locations": [
         {
             "id": 1,
