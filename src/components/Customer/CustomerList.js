@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react"
 import { CustomerContext } from "./CustomerProvider"
 import { CustomerCard } from "./CustomerCard"
+import { useHistory } from 'react-router-dom'
 import "./Customer.css"
 
 export const CustomerList = () => {
@@ -14,13 +15,21 @@ export const CustomerList = () => {
     }, [])
 
 
-    return (	
-		<div className="customers">
-        {
-			customers.map(customer => {
-				return <CustomerCard key={customer.id} location={customer.address} customer={customer} />
-			})
-        }
-        </div>
-    )
+    const history = useHistory()
+
+    return (
+      <>
+          <h2>Customer</h2>
+      <button onClick={() => {history.push("/customer/create")}}>
+              Add Customer
+          </button>
+          <div className="customer">
+          {
+        customers.map(customer => {
+          return <CustomerCard key={customer.id} customer={customer} />
+        })
+          }
+          </div>
+      </>
+  )
 }

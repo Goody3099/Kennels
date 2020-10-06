@@ -1,75 +1,90 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 2,
-            "name": "Ruby",
-            "breed": "Irish Setter",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 3,
-            "name": "Buddy",
-            "breed": "Golden Retriever",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 4,
-            "name": "Bear",
-            "breed": "Mastiff",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 5,
-            "name": "Emily",
-            "breed": "Tiny White Dogo",
-            "customerId": 1,
-            "locationId": 2
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        }
-    ],
-    "employees": [
-        {
-            "id":1,
-            "name": "Matt",
-            "store": "Murfreesboro"
-        },
-        {
-            "id":2,
-            "name": "Jasmin",
-            "store": "Lavergne"
-        },
-        {
-            "id":3,
-            "name": "Jerry",
-            "store": "Smyrna"
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "name": "Ruby",
+      "breed": "Irish Setter",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 3,
+      "name": "Buddy",
+      "breed": "Golden Retriever",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 4,
+      "name": "Bear",
+      "breed": "Mastiff",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 5,
+      "name": "Emily",
+      "breed": "Tiny White Dogo",
+      "customerId": 1,
+      "locationId": 2
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct"
+    },
+    {
+      "name": "Lucas",
+      "address": null,
+      "id": 2
+    },
+    {
+      "name": "Maddy",
+      "address": null,
+      "id": 3
+    },
+    {
+      "name": "test",
+      "address": "test",
+      "id": 4
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Matt",
+      "store": "Murfreesboro"
+    },
+    {
+      "id": 2,
+      "name": "Jasmin",
+      "store": "Lavergne"
+    },
+    {
+      "id": 3,
+      "name": "Jerry",
+      "store": "Smyrna"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }

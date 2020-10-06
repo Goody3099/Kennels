@@ -3,11 +3,14 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { AnimalList } from "./animal/AnimalList"
+import { AnimalForm } from "./animal/AnimalForm"
 import { EmployeeProvider } from "./Employee/EmployeeProvider"
 import { EmployeeList } from "./Employee/EmployeeList"
 import { CustomerProvider } from "./Customer/CustomerProvider"
 import { CustomerList } from "./Customer/CustomerList"
-import { LocationCard } from "./Location/LocationCard"
+import { CustomerForm } from "./Customer/CustomerForm"
+import { LocationProvider } from "./Location/LocationProvider"
+import { LocationList } from "./Location/LocationList"
 
 
 export const ApplicationViews = (props) => {
@@ -25,10 +28,22 @@ export const ApplicationViews = (props) => {
                 </Route>
             </AnimalProvider>
 
+            <AnimalProvider>
+                <LocationProvider>
+                    <CustomerProvider>
+                        <Route exact path="/animals/create">
+                            <AnimalForm />
+                        </Route>
+                    </CustomerProvider>
+                </LocationProvider>
+            </AnimalProvider>
+
             {/* Render the locations list when http://localhost:3000/locations */}
-            <Route path="/locations">
-                <LocationCard />
-            </Route>
+            <LocationProvider>
+                <Route exact path="/locations">
+                    <LocationList />
+                </Route>
+            </LocationProvider>
 
             {/* Render the employees list when http://localhost:3000/employee */}
             <EmployeeProvider>
@@ -42,6 +57,14 @@ export const ApplicationViews = (props) => {
                 <Route exact path="/customers">
                     <CustomerList />
                 </Route>
+            </CustomerProvider>
+
+            <CustomerProvider>
+                <LocationProvider>
+                        <Route exact path="/customer/create">
+                            <CustomerForm />
+                        </Route>
+                </LocationProvider>
             </CustomerProvider>
         </>
     )
