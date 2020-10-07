@@ -34,6 +34,12 @@
       "breed": "Tiny White Dogo",
       "customerId": 1,
       "locationId": 2
+    },
+    {
+      "name": "test2",
+      "locationId": 1,
+      "customerId": 2,
+      "id": 6
     }
   ],
   "customers": [
@@ -43,36 +49,46 @@
       "address": "7002 Chestnut Ct"
     },
     {
-      "name": "Lucas",
-      "address": null,
-      "id": 2
-    },
-    {
-      "name": "Maddy",
-      "address": null,
-      "id": 3
-    },
-    {
       "name": "test",
-      "address": "test",
-      "id": 4
+      "address": "test1",
+      "id": 2
     }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Matt",
-      "store": "Murfreesboro"
+      "locationId": 1
     },
     {
       "id": 2,
       "name": "Jasmin",
-      "store": "Lavergne"
+      "locationId": 1
     },
     {
       "id": 3,
       "name": "Jerry",
-      "store": "Smyrna"
+      "locationId": 2
+    },
+    {
+      "name": "test employee",
+      "locationId": 3,
+      "id": 4
+    },
+    {
+      "name": "test employee",
+      "locationId": 3,
+      "id": 5
+    },
+    {
+      "name": "test employee",
+      "locationId": 3,
+      "id": 6
+    },
+    {
+      "name": "i get it",
+      "locationId": 3,
+      "id": 7
     }
   ],
   "locations": [
@@ -85,6 +101,21 @@
       "id": 2,
       "name": "Nashville South",
       "address": "209 Emory Drive"
+    },
+    {
+      "name": "test location",
+      "address": "test address",
+      "id": 3
+    },
+    {
+      "name": "test if",
+      "locationId": "hi",
+      "id": 4
+    },
+    {
+      "name": "hi my name is",
+      "address": "test address",
+      "id": 5
     }
   ]
 }

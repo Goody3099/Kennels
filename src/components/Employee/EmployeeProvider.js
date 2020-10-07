@@ -10,10 +10,10 @@ export const EmployeeContext = createContext()
  This component establishes what data can be used.
  */
 export const EmployeeProvider = (props) => {
-    const [employee, setEmployee] = useState([])
+    const [employees, setEmployee] = useState([])
 
     const getEmployee = () => {
-        return fetch("http://localhost:8088/employees")
+        return fetch("http://localhost:8088/employees?_expand=location")
             .then(res => res.json())
             .then(setEmployee)
     }
@@ -37,7 +37,7 @@ export const EmployeeProvider = (props) => {
     */
     return (
         <EmployeeContext.Provider value={{
-            employee, getEmployee, addEmployee
+            employees, getEmployee, addEmployee
         }}>
             {props.children}
         </EmployeeContext.Provider>

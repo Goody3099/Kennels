@@ -11,6 +11,8 @@ import { CustomerList } from "./Customer/CustomerList"
 import { CustomerForm } from "./Customer/CustomerForm"
 import { LocationProvider } from "./Location/LocationProvider"
 import { LocationList } from "./Location/LocationList"
+import { LocationForm } from "./Location/LocationForm"
+import { EmployeeForm } from "./Employee/EmployeeForm"
 
 
 export const ApplicationViews = (props) => {
@@ -45,11 +47,25 @@ export const ApplicationViews = (props) => {
                 </Route>
             </LocationProvider>
 
+            <LocationProvider>
+                <Route exact path="/locations/create">
+                    <LocationForm />
+                </Route>
+            </LocationProvider>
+
             {/* Render the employees list when http://localhost:3000/employee */}
             <EmployeeProvider>
                 <Route exact path="/employees">
                     <EmployeeList />
                 </Route>
+            </EmployeeProvider>
+
+            <EmployeeProvider>
+                <LocationProvider>
+                    <Route exact path="/employees/create">
+                        <EmployeeForm />
+                    </Route>
+                </LocationProvider>
             </EmployeeProvider>
 
             {/* Render the customers list when http://localhost:3000/customer */}

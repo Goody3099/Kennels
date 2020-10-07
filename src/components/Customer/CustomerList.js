@@ -23,7 +23,7 @@ export const CustomerList = () => {
       <button onClick={() => {history.push("/customer/create")}}>
               Add Customer
           </button>
-          <div className="customer">
+          <div className="customers">
           {
         customers.map(customer => {
           return <CustomerCard key={customer.id} customer={customer} />
