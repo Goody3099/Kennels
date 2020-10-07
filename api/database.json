@@ -46,12 +46,19 @@
     {
       "id": 1,
       "name": "Hannah Hall",
-      "address": "7002 Chestnut Ct"
+      "address": "7002 Chestnut Ct",
+      "email": "HH@gmail.com"
     },
     {
       "name": "test",
       "address": "test1",
-      "id": 2
+      "id": 2,
+      "email": "TT@gmail.com"
+    },
+    {
+      "email": "mv@gmail.com",
+      "name": "Monica Van",
+      "id": 3
     }
   ],
   "employees": [
