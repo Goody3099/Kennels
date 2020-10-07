@@ -34,12 +34,6 @@
       "breed": "Tiny White Dogo",
       "customerId": 1,
       "locationId": 2
-    },
-    {
-      "name": "test2",
-      "locationId": 1,
-      "customerId": 2,
-      "id": 6
     }
   ],
   "customers": [
@@ -76,26 +70,6 @@
       "id": 3,
       "name": "Jerry",
       "locationId": 2
-    },
-    {
-      "name": "test employee",
-      "locationId": 3,
-      "id": 4
-    },
-    {
-      "name": "test employee",
-      "locationId": 3,
-      "id": 5
-    },
-    {
-      "name": "test employee",
-      "locationId": 3,
-      "id": 6
-    },
-    {
-      "name": "i get it",
-      "locationId": 3,
-      "id": 7
     }
   ],
   "locations": [
@@ -108,21 +82,6 @@
       "id": 2,
       "name": "Nashville South",
       "address": "209 Emory Drive"
-    },
-    {
-      "name": "test location",
-      "address": "test address",
-      "id": 3
-    },
-    {
-      "name": "test if",
-      "locationId": "hi",
-      "id": 4
-    },
-    {
-      "name": "hi my name is",
-      "address": "test address",
-      "id": 5
     }
   ]
 }
